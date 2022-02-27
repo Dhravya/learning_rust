@@ -12,9 +12,13 @@ fn main() {
 
     // References
     let capacity_minus_len = calculate_len_capacity_delta(&x);
-    println!("capacity - len of X is {} - {} = {}", x.capacity(), x.len(), capacity_minus_len)
+    println!("capacity - len of X is {} - {} = {}", x.capacity(), x.len(), capacity_minus_len);
 
-    
+    let a = [1, 2, 3, 4];
+ 
+    let slice = &a[0..1];
+
+    println!("The slice is {:?}", slice);
 
 }
 
